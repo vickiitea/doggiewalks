@@ -3,39 +3,6 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Doggie Walks!</title><link rel="stylesheet" type="text/css" href="DoggieWalks.css">
-    <script>
-        function myFunction() {
-            var x = document.getElementById("responsiveNav");
-            if (x.className === "header") {
-                x.className += "responsive";
-            } else {
-                x.className = "header";
-            }
-        }
-        
-    var slideIndex = 0;
-        
-    showDivs(slideIndex);
-    
-    function plusDivs(n){
-        slideIndex = slideIndex + n;
-        showDivs(slideIndex);
-    }
-    
-    function showDivs(theIndex){
-        var classVar = document.getElementsByClassName("mySlides");
-        var highestIndex = classVar.length - 1;
-        if (theIndex > highestIndex) {slideIndex = 0;}
-        
-        if (theIndex < 0) {slideIndex = highestIndex;}
-        
-        for(i=0; i<classVar.length; i++){
-            classVar[i].style.display = "none"; }
-    
-        classVar[slideIndex].style.display = "block";
-    
-    }
-    </script>
 </head>
 
 <body>
@@ -68,15 +35,15 @@
        <!--slideshow-->
 <div class="w3-content-w3-display-container">
  <button class="w3-button-w3-black-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
- <img class="mySlides" src="/Images/Nicolespics/IMG_2140.JPG">
- <img class="mySlides" src="/Images/IMG10.JPG">
- <img class="mySlides" src="/Images/Nicolespics/animalwatch2.JPG">
- <img class="mySlides" src="/Images/Nicolespics/playgroup.JPG">
- <img class="mySlides" src="/Images/IMG13.JPG">
- <img class="mySlides" src="/Images/Nicolespics/daycare1.JPG">
- <img class="mySlides" src="/Images/IMG_0102.JPG">
- <img class="mySlides" src="/Images/IMG17.JPG">
- <img class="mySlides" src="/Images/Nicolespics/IMG_2282.JPG">
+ <img class="mySlides" src="Images/Nicolespics/IMG_2140.JPG">
+ <img class="mySlides" src="Images/IMG10.JPG">
+ <img class="mySlides" src="Images/Nicolespics/animalwatch2.JPG">
+ <img class="mySlides" src="Images/Nicolespics/playgroup.JPG">
+ <img class="mySlides" src="Images/IMG13.JPG">
+ <img class="mySlides" src="Images/Nicolespics/daycare1.JPG">
+ <img class="mySlides" src="Images/IMG_0102.JPG">
+ <img class="mySlides" src="Images/IMG17.JPG">
+ <img class="mySlides" src="Images/Nicolespics/IMG_2282.JPG">
  <button class="w3-button-w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
        <!--end of slideshow-->
@@ -101,7 +68,7 @@
 <ul id="rig">
     <li>
         <div class="rig-cell">
-            <a href="/ReviewPage.html"><img class="rig-img" src="/Images/IMG_0096.jpeg">
+            <a href="ReviewPage.html"><img class="rig-img" src="/Images/IMG_0096.jpeg">
             <span class="rig-overlay"></span>
                 <span class="rig-text">DoggieWalks has been so great for us and our dog Tasha!  We have been clients of theirs for several years now, and we've mostly been using Nicole and Justin for dog walks.  They are all super responsive, repsonsible, trustworthy, and dependable.  Tasha always looks forwards to her walks and comes back tired out. Thank you Nicole and Justin for all the amazing walks and for taking such great care of our little girl.
             <br><br>- Nicholas T</span></a>
@@ -109,7 +76,7 @@
     </li>
     <li>
         <div class="rig-cell">
-            <a href="/ReviewPage.html"><img class="rig-img" src="/Images/Nicolespics/IMG_2140.JPG">
+            <a href="ReviewPage.html"><img class="rig-img" src="/Images/Nicolespics/IMG_2140.JPG">
             <span class="rig-overlay"></span>
                 <span class="rig-text">DoggieWalks is the very best dog walking service you could ever want!  I've been with them for years, and they have followed me as I've moved multiple times around the city, worked with my crazy schedule to add night walks when needed and even helped my dog through a serious rehabilitation after her surgery.  Their walkers are caring, responsive, and responsible, and their monthly billing is so easy! I'll never use anyone else.  Thank you for all that you do!
             <br> <br> -Kim S</span></a>
@@ -117,7 +84,7 @@
     </li>
     <li>
         <div class="rig-cell">
-            <a href="/ReviewPage.html"><img class="rig-img" src="/Images/Nicolespics/overnight.JPG">
+            <a href="ReviewPage.html"><img class="rig-img" src="/Images/Nicolespics/overnight.JPG">
             <span class="rig-overlay"></span>
                 <span class="rig-text">It's been four years since we found DoggieWalks for our little Goldendoodle guy, Charlie. They've been walking Charlie since he was a puppy and at this point we swear he loves Nate, his walker more than us! Nicole, Caroline and the whole DW crew are so thoughtful and attentive to our dood -- we love them so much and fear ever leaving SF because of them. We've even used them for boarding and Charlie was loved and happy as a clam. Can't recommend them enough. Two paws up!<br><br> -Cassie V</span></a>
         </div>
@@ -125,7 +92,39 @@
     <li>
   </li>
 </ul>
-       
+           <script>
+        function myFunction() {
+            var x = document.getElementById("responsiveNav");
+            if (x.className === "header") {
+                x.className += "responsive";
+            } else {
+                x.className = "header";
+            }
+        }
+        
+    var slideIndex = 0;
+        
+    showDivs(slideIndex);
+    
+    function plusDivs(n){
+        slideIndex = slideIndex + n;
+        showDivs(slideIndex);
+    }
+    
+    function showDivs(theIndex){
+        var classVar = document.getElementsByClassName("mySlides");
+        var highestIndex = classVar.length - 1;
+        if (theIndex > highestIndex) {slideIndex = 0;}
+        
+        if (theIndex < 0) {slideIndex = highestIndex;}
+        
+        for(i=0; i<classVar.length; i++){
+            classVar[i].style.display = "none"; }
+    
+        classVar[slideIndex].style.display = "block";
+    
+    }
+    </script>
    </main>
     
 </body>
