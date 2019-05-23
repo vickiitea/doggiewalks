@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Doggie Walks!</title><link rel="stylesheet" type="text/css" href="DoggieWalks.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("responsiveNav");
+            if (x.className === "header") {
+                x.className += "responsive";
+            } else {
+                x.className = "header";
+            }
+        }
+        
+    var slideIndex = 0;
+        
+    showDivs(slideIndex);
+    
+    function plusDivs(n){
+        slideIndex = slideIndex + n;
+        showDivs(slideIndex);
+    }
+    
+    function showDivs(theIndex){
+        var classVar = document.getElementsByClassName("mySlides");
+        var highestIndex = classVar.length - 1;
+        if (theIndex > highestIndex) {slideIndex = 0;}
+        
+        if (theIndex < 0) {slideIndex = highestIndex;}
+        
+        for(i=0; i<classVar.length; i++){
+            classVar[i].style.display = "none"; }
+    
+        classVar[slideIndex].style.display = "block";
+    
+    }
+    </script>
+</head>
+
+<body>
+   <main>
+      <div class="home_page_logo">
+          <img src="Images/logo.jpg" class="logo_img">
+      </div>
+    
+       <div class="header" id="responsiveNav">
+       <a href="javascript:void(0);" style="font-size:3.5vw;" class="icon" onclick="myFunction()">&#9776;</a> 
+
+          <a href="DoggieWalksHomePage.html">
+              Home
+          </a>
+          <a href="AboutPage.html">
+              About
+          </a>
+          <a href="Service.html">
+            Services  
+          </a>
+          <a href="ReviewPage.html">Reviews</a>
+          <a href="Gallery.html">Gallery</a>
+          <a href="Contact.html">Contact</a>
+          <a href="Direct_Inquiry_form.html">Request Service</a>
+           
+       </div> <!--end of home page header div-->
+    
+      <h1>Welcome to Doggie Walks!</h1>
+      
+       <!--slideshow-->
+<div class="w3-content-w3-display-container">
+ <button class="w3-button-w3-black-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+ <img class="mySlides" src="/Images/Nicolespics/IMG_2140.JPG">
+ <img class="mySlides" src="/Images/IMG10.JPG">
+ <img class="mySlides" src="/Images/Nicolespics/animalwatch2.JPG">
+ <img class="mySlides" src="/Images/Nicolespics/playgroup.JPG">
+ <img class="mySlides" src="/Images/IMG13.JPG">
+ <img class="mySlides" src="/Images/Nicolespics/daycare1.JPG">
+ <img class="mySlides" src="/Images/IMG_0102.JPG">
+ <img class="mySlides" src="/Images/IMG17.JPG">
+ <img class="mySlides" src="/Images/Nicolespics/IMG_2282.JPG">
+ <button class="w3-button-w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+       <!--end of slideshow-->
+       
+       <div class="info_homepage_link">
+           <br>
+           <p class="homepage_about">Thank you for visiting my Dog Walking/Pet Sitting Website! My name is Nicole Spooner and DoggieWalks is my company that I've created to take my love of working with animals to a place where both pets and people can benefit. <br>
+           
+           <br>I am a Veterinary Technician with 16 years of animal care experience and training.
+           I love animals, they are my life. Nothing makes me happier than spending time with pets. I love all pets, from Guinea pigs to Great Dane's- it doesn't matter, they are all family to me!<br>
+           
+           <br>My services include but are not limited to: Dog Walking, Pet Sitting (kitties and doggies), Group Walks, and Dog and Cat Visits while you are away. <br>
+           Please check out my About Me Page to learn more about my experience and what made me the animal lover that I am today!<br>
+           
+           <br>Also, check out my rates, I am sure you will not be disappointed as I know they are very reasonable.<br>
+           
+           <br>NEW CLIENT bonus: if you and your pet like me and recommend me to a friend of yours, I will give you 50% off your next visit!</p>
+       </div><!--end of info homepage link-->
+
+<h1>Customer Reviews</h1>
+<br>
+<ul id="rig">
+    <li>
+        <div class="rig-cell">
+            <a href="/ReviewPage.html"><img class="rig-img" src="/Images/IMG_0096.jpeg">
+            <span class="rig-overlay"></span>
+                <span class="rig-text">DoggieWalks has been so great for us and our dog Tasha!  We have been clients of theirs for several years now, and we've mostly been using Nicole and Justin for dog walks.  They are all super responsive, repsonsible, trustworthy, and dependable.  Tasha always looks forwards to her walks and comes back tired out. Thank you Nicole and Justin for all the amazing walks and for taking such great care of our little girl.
+            <br><br>- Nicholas T</span></a>
+        </div>
+    </li>
+    <li>
+        <div class="rig-cell">
+            <a href="/ReviewPage.html"><img class="rig-img" src="/Images/Nicolespics/IMG_2140.JPG">
+            <span class="rig-overlay"></span>
+                <span class="rig-text">DoggieWalks is the very best dog walking service you could ever want!  I've been with them for years, and they have followed me as I've moved multiple times around the city, worked with my crazy schedule to add night walks when needed and even helped my dog through a serious rehabilitation after her surgery.  Their walkers are caring, responsive, and responsible, and their monthly billing is so easy! I'll never use anyone else.  Thank you for all that you do!
+            <br> <br> -Kim S</span></a>
+        </div>
+    </li>
+    <li>
+        <div class="rig-cell">
+            <a href="/ReviewPage.html"><img class="rig-img" src="/Images/Nicolespics/overnight.JPG">
+            <span class="rig-overlay"></span>
+                <span class="rig-text">It's been four years since we found DoggieWalks for our little Goldendoodle guy, Charlie. They've been walking Charlie since he was a puppy and at this point we swear he loves Nate, his walker more than us! Nicole, Caroline and the whole DW crew are so thoughtful and attentive to our dood -- we love them so much and fear ever leaving SF because of them. We've even used them for boarding and Charlie was loved and happy as a clam. Can't recommend them enough. Two paws up!<br><br> -Cassie V</span></a>
+        </div>
+    </li>
+    <li>
+  </li>
+</ul>
+       
+   </main>
+    
+</body>
+</html>

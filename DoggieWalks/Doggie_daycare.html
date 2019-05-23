@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doggie Day Care</title><link rel="stylesheet" type="text/css" href="DoggieWalks.css">
+        <script>
+            function myFunction() {
+            var x = document.getElementById("responsiveNav");
+            if (x.className === "header") {
+                x.className += "responsive";
+            } else {
+                x.className = "header";
+            }
+        }
+    </script>
+</head>
+<body>
+   <main>
+      <div class="home_page_logo">
+          <img src="Images/logo.jpg" class="logo_img">
+      </div>
+    
+       <div class="header" id="responsiveNav">
+       <a href="javascript:void(0);" style="font-size:3.5vw;" class="icon" onclick="myFunction()">&#9776;</a> 
+
+          <a href="DoggieWalksHomePage.html">
+              Home
+          </a>
+          <a href="/AboutPage.html">
+              About
+          </a>
+          <a href="/Service.html">
+            Services  
+          </a>
+          <a href="/ReviewPage.html">Reviews</a>
+          <a href="/Gallery.html">Gallery</a>
+          <a href="/Contact.html">Contact</a>
+          <a href="/Direct_Inquiry_form.html">Request Service</a>
+           
+       </div> <!--end of home page header div-->
+       
+       <div class="about_header">
+           <h1>Doggie Day Care</h1> <br>
+       </div>
+       
+       <div class="description_image">
+           <img src="Images/Nicolespics/daycare1.JPG">
+       </div>
+       
+       <div class="service_description"> 
+       <p>Doggie daycare lasts four hours, from about 10am-2pm. This day includes 2-3 walks, exercise at a nearby dog park, and plenty of water and down time if needed. The total doggie day care size is only a max of 4 so sign up fast!</p>
+        <ul>
+           <li>
+       1 Dog: $45 per 4 hours</li>
+       <li>
+       2 Dogs: $70 per 4 hours</li>
+       <li>Puppy Daycare: $55 per 4 hours</li>
+
+       </ul>
+       </div>
+      <a href="Direct_Inquiry_form.html"><div class="click_for_service">
+           Sign up!
+       </div></a>
+       
+       
+   </main>
+    
+</body>
+</html>

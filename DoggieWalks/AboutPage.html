@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title> <link rel="stylesheet" type="text/css" href="DoggieWalks.css">
+    <script>
+            function myFunction() {
+            var x = document.getElementById("responsiveNav");
+            if (x.className === "header") {
+                x.className += "responsive";
+            } else {
+                x.className = "header";
+            }
+        }
+    </script>
+</head>
+<body>
+   <main>
+      <div class="home_page_logo">
+          <img src="Images/logo.jpg" class="logo_img">
+      </div>
+    
+       <div class="header" id="responsiveNav">
+       <a href="javascript:void(0);" style="font-size:3.5vw;" class="icon" onclick="myFunction()">&#9776;</a> 
+
+          <a href="DoggieWalksHomePage.html">
+              Home
+          </a>
+          <a href="/AboutPage.html">
+              About
+          </a>
+          <a href="/Service.html">
+            Services  
+          </a>
+          <a href="/ReviewPage.html">Reviews</a>
+          <a href="/Gallery.html">Gallery</a>
+          <a href="/Contact.html">Contact</a>
+          <a href="/Direct_Inquiry_form.html">Request Service</a>
+           
+       </div> <!--end of home page header div-->
+       
+       <!--slideshow-->
+       
+       <div class="about_header">
+           <h1>About</h1>
+           <br><img src="/Images/nicolespooner.jpg" class="about_img">
+           <p class="abouttext">DoggieWalks founder Nicole
+           Spooner grew up fostering and volunteering with
+           various animal rescue organizations and caring for
+           her own pets. She took her true love of animals and
+           became a Veterinary Technician.<br>
+           <br>Ten years ago, Nicole turned this passion into a
+           business that could benefit both pets and the owners
+           who love them. She wanted her business to stand out
+           from other dog-walking businesses, making it more
+           personal for both the clients and their furry
+           friends.<br>
+           <br>Instead of constantly switching up the walkers like other companies, DoggieWalks strives to create long lasting, personal relationships between dogs and
+           their walkers to maximize their self-growth and ensure their individual needs are being met. By assigning each dog the same walker for every walk, we
+           see happier dogs, happier walkers, and happier clients.</p>
+       </div><!--end of about info-->
+
+        <div class="socialmedia">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <a href="http://www.yelp.com/biz/jvCXjVjQxiDzM50acBeokQ" class="fa fa-yelp"></a>
+            <a href="https://www.instagram.com/doggiewalks/" class="fa fa-instagram"></a>
+
+        </div> <!--end of social media-->
+       
+       
+   </main>
+    
+</body>
+</html>

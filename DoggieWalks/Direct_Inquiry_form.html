@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Service</title><link rel="stylesheet" type="text/css" href="DoggieWalks.css">
+        <script>
+            function myFunction() {
+            var x = document.getElementById("responsiveNav");
+            if (x.className === "header") {
+                x.className += "responsive";
+            } else {
+                x.className = "header";
+            }
+        }
+    </script>
+</head>
+<body>
+   <main>
+      <div class="home_page_logo">
+          <img src="Images/logo.jpg" class="logo_img">
+      </div>
+    
+       <div class="header" id="responsiveNav">
+       <a href="javascript:void(0);" style="font-size:3.5vw;" class="icon" onclick="myFunction()">&#9776;</a> 
+
+          <a href="DoggieWalksHomePage.html">
+              Home
+          </a>
+          <a href="/AboutPage.html">
+              About
+          </a>
+          <a href="/Service.html">
+            Services  
+          </a>
+          <a href="/ReviewPage.html">Reviews</a>
+          <a href="/Gallery.html">Gallery</a>
+          <a href="/Contact.html">Contact</a>
+          <a href="/Direct_Inquiry_form.html">Request Service</a>
+           
+       </div> <!--end of home page header div-->
+              
+      <div class="about_header">
+      <h1>Sign Up</h1><br>
+      </div>
+       
+      <div class="form_background">
+         <div class="form_pics">
+             <img src="Images/Nicolespics/IMG_2140.JPG">
+        <img src="Images/Nicolespics/IMG_2501.JPG">
+         </div>
+
+          <div class="DI_form">
+                 <form class="inquiry_form">
+                     Full name:<br><input type="text" name="fullname" ><br><br>
+                     Email: <br><input type="email" name="email"><br><br>
+                     Phone number:<br>
+                    <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+
+                     Doggie's Name:<br><input type="text" name="doggiesname"><br><br>
+                     Doggie's Birthday: <br> <input type="date"><br><br>
+                     Doggie Breed: <br> <input type="text" name="doggiebreed"><br>
+                      <br>Type of Service:<br><select name="Service">
+                         <option value="doggiewalking">Doggie Walking</option>
+                         <option value="doggieplaygroup">Doggie Play Groups</option>
+                         <option value="catvisits">Cat Visits</option>
+                         <option value="animalvisits">Animal Visits</option>
+                         <option value="overnights">Overnights</option>
+                         <option value="doggiedaycare">Doggie Day Care</option>
+                         <option value="doggietraining">Doggie Training</option>
+                         <option value="techservices">Technician Services</option>
+
+                     </select><br><br>
+                     Important Information: <br><input type="text" name="importantinfo"><br><br>
+                     <br><input type="submit" value="Submit" onclick="alert('Thank you for submiting the form, we will get in touch with you soon')"><br>
+
+                 </form> 
+              
+          </div>
+           
+           
+       </div>
+       
+       
+   </main>
+    
+</body>
+</html>
